@@ -48,11 +48,11 @@ campaign_name = st.selectbox('Campaign Name', ['BlackFriday', 'PowerRelease', 'L
 sentiment_score = st.number_input('Sentiment Score (From -1 to 1)', -1.0, 1.0, value=0.0, step=0.0001, format="%.4f")
 toxicity_score = st.number_input('Toxicity Score (From 0 to 1)', 0.0, 1.0, value=0.0, step=0.0001, format="%.4f")
 likes_count = st.number_input('Likes Count (From 0 to 10000)', 0, 10000)
-shares_count = st.number_input('Shares Count (From 0 to 10000)', 0, 10000)
-comments_count = st.number_input('Comments Count (From 0 to 10000', 0, 10000)
+shares_count = st.number_input('Shares Count (From 0 to 2000)', 0, 2000)
+comments_count = st.number_input('Comments Count (From 0 to 1000)', 0, 1000)
 impressions = st.number_input('Impressions (From 0 to 10000)', 0, 10000)
 user_past_sentiment_avg = st.number_input('User Past Sentiment Average (From -1 to 1)', -1.0, 1.0, value=0.0, step=0.0001, format="%.4f")
-user_engagement_growth = st.number_input('User Engagement Growth (From -1 to 1)', -1.0, 1.0, value=0.0, step=0.0001, format="%.4f")
+user_engagement_growth = st.number_input('User Engagement Growth (From -0.5 to 0.5)', -0.5, 0.5, value=0.0, step=0.0001, format="%.4f")
 buzz_change_rate = st.number_input('Buzz Change Rate (From -100 to 100)', -100.0, 100.0, value=0.0, step=0.1, format="%.1f")
 
 if st.button('Predict'):
